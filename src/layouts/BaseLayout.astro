@@ -1,5 +1,7 @@
 ---
 import "../styles/base.css";
+import { ClientRouter } from "astro:transitions";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -9,14 +11,10 @@ import "../styles/base.css";
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>Yunogasai</title>
+        <ClientRouter />
     </head>
     <body>
-        <h1>yunogasai</h1>
-        <img
-            src="/yunogasai.svg"
-            alt="yunogasai"
-            width="52.1px"
-            height="52.1px"
-        />
+        <Navigation />
+        <slot />
     </body>
 </html>
