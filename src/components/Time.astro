@@ -1,0 +1,9 @@
+<div id="time"></div>
+
+<script>
+    const time = document.getElementById("time")!;
+    time.textContent = Date();
+    setInterval(() => {
+        time.textContent = Date();
+    }, 1000);
+</script>
