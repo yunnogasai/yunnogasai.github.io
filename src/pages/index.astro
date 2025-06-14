@@ -1,4 +1,5 @@
 ---
+import Time from "@components/Time.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 const allPosts = Object.values(
     import.meta.glob("./posts/*.md", { eager: true })
@@ -10,6 +11,7 @@ const allPosts = Object.values(
     <label for="color-select">Select color:</label>
     <input type="color" name="color-select" value="#db8e94" />
     <div>{Date()}</div>
+    <Time />
     <br />
     <div>posts</div>
     {

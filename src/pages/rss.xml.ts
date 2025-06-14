@@ -8,10 +8,9 @@ export async function GET(context: any) {
     }
     return rss({
         xmlns: record,
-        title: "Astro Learner | Blog",
-        description: "My journey learning Astro",
+        title: "Yuno blog",
+        description: "写一些东西()",
         site: context.site,
         items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
-        customData: `<language>en-us</language>`,
     });
 }
