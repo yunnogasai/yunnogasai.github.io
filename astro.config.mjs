@@ -1,9 +1,8 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
-export default defineConfig(
-    {
-        site: 'https://yunogasai728.github.io',
-        server: { port: 1116 }
-    });
+export default defineConfig({
+    site: "https://yunogasai728.github.io",
+    server: { port: 1116 },
+});

@@ -1,16 +1,30 @@
 ---
-import "../styles/base.css";
+import "@styles/base.css";
 import { ClientRouter } from "astro:transitions";
-import Navigation from "../components/Navigation.astro";
+import Navigation from "@components/Navigation.astro";
 ---
 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <title>Yunogasai</title>
+        <meta name="description" content="Yuno,I am who I am." />
+        <meta
+            name="keywords"
+            content="acgn,galgame,comic,anime,novel,yuno,The-Future-Diary"
+        />
+        <!-- BEGIN:OGP-->
+        <meta property="og:title" content="Yono Post" />
+        <meta property="og:type" content="website" />
+        <meta name="og:description" content="Yuno,I am who I am." />
+        <meta property="og:url" content="https://yunogasai728.github.io" />
+        <meta property="og:image" content="/yuno.avif" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Yono Post" />
+        <!-- END:OGP -->
         <link rel="icon" type="image/svg+xml" href="/yunogasai.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Yunogasai</title>
         <ClientRouter />
     </head>
     <body>
