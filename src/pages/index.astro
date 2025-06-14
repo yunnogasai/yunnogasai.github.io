@@ -6,9 +6,11 @@ const allPosts = Object.values(
 ---
 
 <BaseLayout>
-    hi,
-    <input type="color" />
-
+    <div>hi,</div>
+    <label for="color-select">Select color:</label>
+    <input type="color" name="color-select" value="#db8e94" />
+    <div>{Date()}</div>
+    <br />
     <div>posts</div>
     {
         allPosts.map((post: any) => (

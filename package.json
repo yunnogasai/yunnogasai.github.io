@@ -13,5 +13,8 @@
     "@astrojs/rss": "^4.0.12",
     "astro": "^5.9.0",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "rollup-plugin-visualizer": "^6.0.3"
   }
 }
