@@ -12,7 +12,9 @@ const allPosts = Object.values(
     <div>posts</div>
     {
         allPosts.map((post: any) => (
-            <a href={post.url}>{post.frontmatter.title}</a>
+            <div>
+                <a href={post.url}>{post.frontmatter.title}</a>
+            </div>
         ))
     }
 </BaseLayout>
