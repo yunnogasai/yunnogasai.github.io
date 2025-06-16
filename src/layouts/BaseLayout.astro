@@ -2,12 +2,13 @@
 import "@styles/base.css";
 import { ClientRouter } from "astro:transitions";
 import Navigation from "@components/Navigation.astro";
+const { title } = Astro.props;
 ---
 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Yunogasai</title>
+        <title>{title ?? "Yunogasai"}</title>
         <meta name="description" content="Yuno,I am who I am." />
         <meta
             name="keywords"
