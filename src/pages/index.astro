@@ -2,7 +2,7 @@
 import Time from "@components/Time.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 const allPosts = Object.values(
-    import.meta.glob("./posts/*.md", { eager: true })
+    import.meta.glob("./memorandums/*.md", { eager: true })
 );
 ---
 
@@ -13,7 +13,7 @@ const allPosts = Object.values(
     <div>{Date()}</div>
     <Time />
     <br />
-    <div>posts</div>
+    <div>memorandums</div>
     {
         allPosts.map((post: any) => (
             <div>

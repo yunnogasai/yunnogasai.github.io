@@ -80,4 +80,8 @@ export default defineConfig({
     //i18n
 
     //env
+
+    // experimetal: {
+    //     liveContentCollections: true,
+    // },
 });

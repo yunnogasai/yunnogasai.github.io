@@ -1,12 +1,13 @@
 ---
 import "@styles/base.css";
 import "@styles/md.css";
+
 import { ClientRouter } from "astro:transitions";
 import Navigation from "@components/Navigation.astro";
+
 const { frontmatter } = Astro.props;
 ---
 
-<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -22,6 +23,8 @@ const { frontmatter } = Astro.props;
     </head>
     <body>
         <Navigation />
-        <div><slot /></div>
+        <div>
+            {tip}<slot />
+        </div>
     </body>
 </html>
