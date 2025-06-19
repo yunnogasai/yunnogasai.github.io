@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/BaseLayout.astro"
+layout: "@layouts/MdLayout.astro"
 title: "gpg 使用"
 pubDate: 2025-06-14
 description: "gpg 常见命令"
