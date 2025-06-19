@@ -27,10 +27,15 @@ const { title } = Astro.props;
         <link rel="sitemap" href="/sitemap-index.xml" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <style>
+            div {
+                margin-left: 7px;
+            }
+        </style>
         <ClientRouter />
     </head>
     <body>
         <Navigation />
-        <slot />
+        <div><slot /></div>
     </body>
 </html>

@@ -11,10 +11,16 @@ const { frontmatter } = Astro.props;
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{frontmatter.title}</title>
+        <style>
+            div {
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+        </style>
         <ClientRouter />
     </head>
     <body>
         <Navigation />
-        <slot />
+        <div><slot /></div>
     </body>
 </html>
