@@ -10,7 +10,6 @@ export default defineConfig({
     srcDir: "./src",
     publicDir: "./resources",
     outDir: "./dist",
-    scopedStyleStrategy: "where",
     build: {
         format: "file",
     },
